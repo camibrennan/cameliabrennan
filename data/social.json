@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/cameliabrennan",
+      "image": "images/social/twitter.svg"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/camibrennan",
+      "image": "images/social/github.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/cameliabrennan",
+      "image": "images/social/linkedin.svg"
+    }, 
+      {
+      "name": "spotify",
+      "url": "https://open.spotify.com/playlist/6makVp9V7MIk53e18BkpMi?si=2c5a1c72f4af4148",
+      "image": "images/social/spotify.svg"
+    }
+  ]
+}

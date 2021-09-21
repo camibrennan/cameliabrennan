@@ -1,0 +1,46 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Camelia Brennan"
+theme = "hugo-winston-theme"
+
+[params]
+  logo = "images/logo.png"
+  google_analytics_id = "G-5XZVT4K315"
+  twitter_handle = "@cameliabrennan"
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = true
+  showPostsOnHomepage = true
+  showPostDescriptionOnHomepage = true 
+  addFrame = true
+  addDot = false
+  
+[imaging]
+anchor = "smart"
+bgColor = "#ffffff"
+
+[menu]
+
+[[menu.main]]
+ identifier = 'Home'
+ name = 'Home'
+ title = 'Home'
+ url = '/'
+ weight = 1
+[[menu.main]]
+ identifier = 'Posts'
+ name = 'Blog'
+ title = 'Blog'
+ url = '/posts/blog'
+ weight = 3
+ 
+ [[menu.main]]
+  identifier = 'About'
+  name = 'About'
+  url = '/pages/about/'
+  weight = 2
+  
+ [[menu.main]]
+  identifier = 'Tutorials'
+  name = 'Tutorials'
+  url = '/posts/tutorials/'
+  weight = 4

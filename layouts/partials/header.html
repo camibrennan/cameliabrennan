@@ -1,0 +1,17 @@
+<div class='header'>
+  <a href="/"><img src= {{ .Site.BaseURL }}{{ .Site.Params.logo }} width=70% ></a> 
+  <div class="menu-main">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+          <li class="{{ if $active }}active{{ end }}">
+            <a href="{{ .URL }}">
+              <span>{{ .Name }}</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+  </div>
+</div>
+
