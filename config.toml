@@ -5,6 +5,8 @@ theme = "hugo-winston-theme"
 
 [params]
   logo = "images/logo.png"
+  description = 'some things and stuff'
+  images = ['images/logo.png']
   google_analytics_id = "G-5XZVT4K315"
   twitter_handle = "@cameliabrennan"
   showAuthorOnHomepage = true
@@ -13,10 +15,6 @@ theme = "hugo-winston-theme"
   showPostDescriptionOnHomepage = true 
   addFrame = true
   addDot = false
-  
-[imaging]
-anchor = "smart"
-bgColor = "#ffffff"
 
 [menu]
 
