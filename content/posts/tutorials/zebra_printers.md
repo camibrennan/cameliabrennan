@@ -5,7 +5,7 @@ draft: false
 description: A tutorial about trying not to cry when your Zebra printer breaks. 
 ---
 
-Zebra printers seem to either work really well or are broke at the most devestating time possible. 
+Zebra printers seem to either work really well or are broke at the most devastating time possible. 
 
 I recently set up a Zebra printer using a Mac in order to bulk print postage for webstore orders using ShipStation. Prior to doing this, I had always relied on the assistance of an IT department &mdash; so I assure you, you can do this yourself, and everything you read about them not working on Mac's is not true! Label printers can take a little time to set up initially, but can really improve your fulfillment work flow. If you're able to bulk print postage labels, you can significantly expedite the packing and posting step for large mailings. 
 
@@ -17,7 +17,7 @@ I recently set up a Zebra printer using a Mac in order to bulk print postage for
 
 If you just purchased new printer labels or they start printing unevenly or weird, you can [calibrate the machine](https://www.zebra.com/us/en/support-downloads/knowledge-articles/g-series-gk-models-calibrating-the-printer.html) by holding down the button on the front of the Zebra printer. This works well for standard labels. I was at first skeptical that holding down a button until it blinked back at me a certain amount of times could resolve a problem, but it works!
 
-Hold down the feed button until it flashes twice and then release. Other models may be different, but the Zebra support site will show what all the different flashes do in more detail. [Here is an example for the G-Series.](https://supportcommunity.zebra.com/s/article/G-Series-Feed-Button-Modes?language=en_US). 
+Hold down the feed button until it flashes twice and then release. Other models may be different, but the Zebra support site will show what all the different flashes do in more detail. [Here is an example for the G-Series.](https://supportcommunity.zebra.com/s/article/G-Series-Feed-Button-Modes?language=en_US)
 
 
 ## Zebra Printer Driver Settings

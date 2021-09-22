@@ -48,7 +48,7 @@ You can name this and save so you can use it again! Hit Export! & download
 I don’t have excel on my computer so I think it is easiest to just keep this in your downloads folder and then import from there into a google doc because lets face it, Numbers fucking sucks. 
 
 I would suggest creating a blank sheet in google docs:
-File > Import > Upload > select a file from your device > find your ShipStation export .csv file > “open” > Import File & click “replace spreadsheet” 
+**File > Import > Upload > select a file from your device > find your ShipStation export .csv file > “open” > Import File & click “replace spreadsheet”**
 
 Import Data! 
 
