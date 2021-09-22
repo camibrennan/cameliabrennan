@@ -6,7 +6,7 @@ menu:
 ---
 Hello again,
 
-As previously mentioned, I’m learning to code! This is my first attempt at a site using Hugo. 
+As previously mentioned, I’m learning to code! This is my first attempt at building my own website using Hugo. 
 
 I'm currently working on building tools to improve the e-commerce & fulfillment experience for independent record labels. From Shopify help to problematic zebra printers to DIY SoundScan reports &mdash;  I'm here to help, finding ways to automate all things tedious and frustrating.
 

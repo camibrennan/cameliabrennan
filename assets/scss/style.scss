@@ -4,9 +4,9 @@
   --font-family-mono: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
-  --highlight-color: #003640;
-  --heading-color: #003640;
-  --text-color:  #4e5157;
+  --highlight-color: #384058;
+  --heading-color:  #384058;
+  --text-color:  #353638;
 }
 
 $breakpoints: (
@@ -43,8 +43,7 @@ body {
   &.frame {
     min-height: 100vh;
     border: 50px solid; 
-    border-image: url("/images/kale-salad.jpg") 80 80 round;  
-    
+    border-image: url("/images/cuadros.png") 35 25 round;  
   }
 }
 

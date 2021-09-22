@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Zebra Printers - Camelia Brennan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.390da6c67325833f526ba98bb4cb093dddb130e6045d5797e9156195da4fca30.css">
+  
+
+  
+    <meta name="description" content="A tutorial about trying not to cry when your Zebra printer breaks."/>
+    <meta property="og:title" content="Zebra Printers"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/tutorials/zebra_printers/"/>
+    
+    <meta property="og:description" content="A tutorial about trying not to cry when your Zebra printer breaks."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@cameliabrennan"/>
+    <meta name="twitter:creator" content="@cameliabrennan"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a href="/"><img src= /images/logo.png width=70% ></a> 
+  <div class="menu-main">
+      <ul>
+        
+        
+          
+          <li class="">
+            <a href="/">
+              <span>Home</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/pages/about/">
+              <span>About</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/posts/blog">
+              <span>Blog</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/posts/tutorials/">
+              <span>Tutorials</span>
+            </a>
+          </li>
+        
+      </ul>
+  </div>
+</div>
+
+
+    
+  <div class="blog">
+    
+      <div class="author">
+  <img width="30" class="author-image" src="/images/author.jpeg" />
+  <span class="author-name">Camelia Brennan</span>
+  <span class="author-divider"></span>
+  <span class="author-date">September 20, 2021</span>
+</div>
+    
+    <div class="intro">
+      <h1>Zebra Printers</h1>
+      
+    </div>
+    <div class="content">
+      <p>Zebra printers seem to either work really well or are broke at the most devestating time possible.</p>
+<p>I recently set up a Zebra printer using a Mac in order to bulk print postage for webstore orders using ShipStation. Prior to doing this, I had always relied on the assistance of an IT department — so I assure you, you can do this yourself, and everything you read about them not working on Mac&rsquo;s is not true! Label printers can take a little time to set up initially, but can really improve your fulfillment work flow. If you&rsquo;re able to bulk print postage labels, you can significantly expedite the packing and posting step for large mailings.</p>
+<p><strong>Example:</strong> An album pre-order or promotional mailing where recipients all receive the same item.</p>
+<p><strong>Here are some miscellaneous tips I learned from recently setting up a Zebra printer (G-Series) to use with a Mac desktop.</strong></p>
+<h2 id="calibration">Calibration</h2>
+<p>If you just purchased new printer labels or they start printing unevenly or weird, you can <a href="https://www.zebra.com/us/en/support-downloads/knowledge-articles/g-series-gk-models-calibrating-the-printer.html"   target="_blank">calibrate the machine</a>
+ by holding down the button on the front of the Zebra printer. This works well for standard labels. I was at first skeptical that holding down a button until it blinked back at me a certain amount of times could resolve a problem, but it works!</p>
+<p>Hold down the feed button until it flashes twice and then release. Other models may be different, but the Zebra support site will show what all the different flashes do in more detail. <a href="https://supportcommunity.zebra.com/s/article/G-Series-Feed-Button-Modes?language=en_US"   target="_blank">Here is an example for the G-Series.</a>
+.</p>
+<h2 id="zebra-printer-driver-settings">Zebra Printer Driver Settings</h2>
+<p>If calibrating the machine doesn’t resolve your problem you’ll likely want to poke around in the driver settings. I found this to be the most intimidating, but it&rsquo;s only a little tricky once you get the hang of it.</p>
+<p><strong>You can’t adjust the Zebra printer settings in the normal printer settings</strong>, but you can do using your Terminal application! If it&rsquo;s your first time using this application — you can use command space, then type &ldquo;terminal&rdquo; on a Mac.</p>
+<p>Once your Terminal is open, <strong>paste:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cupsctl WebInterface<span style="color:#f92672">=</span>yes
+</code></pre></div><p><strong>Hit enter!</strong></p>
+<p>You can now view our Zebra printer settings here under &ldquo;Administration&rdquo; by going here in your browser: <strong>http://localhost:631/printers/</strong></p>
+<p><a href="https://www.zebra.com/us/en/support-downloads/knowledge-articles/ait/Install-CUPS-driver-for-Zebra-Printer-in-Mac-OS.html"   target="_blank">Here</a>
+ is a good resource for more details on how to do this if you get stuck.</p>
+<p><strong>If prompted, your user name and password are whatever your username and password is for your computer.</strong></p>
+<p>Try adjusting the <strong>Media Tracking</strong> , <strong>Media Size</strong> and <strong>Media Type</strong> setting under the Administration tab.</p>
+<p>The label manufacturer should provide information regarding what settings to use and hopefully the size of the labels is clear, but if not give them a quick measure. From my experience, <strong>&ldquo;Web Sensing&rdquo;</strong> were most common as they&rsquo;re easiest to peel off but have a slight gap between each label. If there is no gap and the labels all run together, select <strong>&ldquo;Continuous&rdquo;</strong>.</p>
+<p>If this is still not working out <a href="https://support.zebra.com/cpws/docs/cups/cups_driver1_4_configure.pdf"   target="_blank">check here</a>
+ for some more information about how to configure your Zebra printer settings using CUPS.</p>
+<p>Godspeed. You can do it!</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/cameliabrennan" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/camibrennan" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/cameliabrennan" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-spotify">
+        <a href="https://open.spotify.com/playlist/6makVp9V7MIk53e18BkpMi?si=2c5a1c72f4af4148" title="spotify" target="_blank" rel="noopener">
+          <img src="/images/social/spotify.svg" width="24" height="24" alt="spotify"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XZVT4K315"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5XZVT4K315');
+      </script>
+    
+  
+
+
+</body>
+</html>

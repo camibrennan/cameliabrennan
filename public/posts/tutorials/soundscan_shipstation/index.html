@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>How to Compile SoundScan Data Using ShipStation - Camelia Brennan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.390da6c67325833f526ba98bb4cb093dddb130e6045d5797e9156195da4fca30.css">
+  
+
+  
+    <meta name="description" content="A tutorial about compiling SoundScan Data using Shipstation"/>
+    <meta property="og:title" content="How to Compile SoundScan Data Using ShipStation"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/tutorials/soundscan_shipstation/"/>
+    
+    <meta property="og:description" content="A tutorial about compiling SoundScan Data using Shipstation"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@cameliabrennan"/>
+    <meta name="twitter:creator" content="@cameliabrennan"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a href="/"><img src= /images/logo.png width=70% ></a> 
+  <div class="menu-main">
+      <ul>
+        
+        
+          
+          <li class="">
+            <a href="/">
+              <span>Home</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/pages/about/">
+              <span>About</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/posts/blog">
+              <span>Blog</span>
+            </a>
+          </li>
+        
+          
+          <li class="">
+            <a href="/posts/tutorials/">
+              <span>Tutorials</span>
+            </a>
+          </li>
+        
+      </ul>
+  </div>
+</div>
+
+
+    
+  <div class="blog">
+    
+      <div class="author">
+  <img width="30" class="author-image" src="/images/author.jpeg" />
+  <span class="author-name">Camelia Brennan</span>
+  <span class="author-divider"></span>
+  <span class="author-date">March 13, 2021</span>
+</div>
+    
+    <div class="intro">
+      <h1>How to Compile SoundScan Data Using ShipStation</h1>
+      
+    </div>
+    <div class="content">
+      <p><strong>UPDATE:</strong> I&rsquo;m currently working on a tool that does this automatically, but in the meantime &hellip;</p>
+<h3 id="add-upcs-into-shipstation">Add UPCs into ShipStation:</h3>
+<p>The first step is to make sure all the UPCs for your releases are in ShipStation. It should pull these in with your product information automatically depending on what webstore you’re using, but if you don’t see them just go to <strong>Products &gt; All Products &gt;</strong> and you can add the UPC to each item.</p>
+<p>ShipStation does not seem to import this information automatically from Bandcamp, the last I checked — but Bandcamp reports sales to SoundScan. So, <strong>you won’t need to report Bandcamp sales to SoundScan</strong>, unless you’ve left the UPCs out on your Bandcamp listings or would prefer report them yourself.</p>
+<p>You should be able to bulk import UPCs if you export the existing products, add the UPC and then import back in again.</p>
+<p>If you update these manually make sure to click “apply changes to open orders” next to the save changes button, so it’ll update your report for orders places before you updated the UPC. <strong>Example:</strong> Pre-orders you have not yet reported and want to make sure are included on first week sales.</p>
+<p><img src="/images/soundscan_1.png" alt="UPC"></p>
+<h3 id="prepare-a-report-to-export">Prepare a Report to Export:</h3>
+<p><strong>Go to</strong>: Orders &gt; Advanced Search &gt; Order Status: select “Awaiting Shipment” &amp; “Shipped”<br>
+“Order Date” select week you wish to report</p>
+<p>+More Criteria … add Criteria : Country is Equal to United States</p>
+<p>Hit Search!</p>
+<p>Once you’re viewing the orders you want to report — you’ll want to export this into a .csv.</p>
+<p>Click on the “Other Actions” drop down &gt; Export Order Line Items “create a new format”, the select the fields you want to export</p>
+<p><img src="/images/soundscan_2.png#center" alt="Export"></p>
+<p>Now select the fields you want — date, store name, order date UPC etc. You won’t actually need more than the UPC and Zip Code and QTY but I include the name and full address and item names just so its easier to look at and make sure the information I’m looking at looks legit.</p>
+<p><img src="/images/soundscan_3.png" alt="example"></p>
+<p>You can name this and save so you can use it again! Hit Export! &amp; download</p>
+<h3 id="importing-the-shipstation-csv-file-into-google-docs">Importing the ShipStation .csv file into Google Docs:</h3>
+<p>I don’t have excel on my computer so I think it is easiest to just keep this in your downloads folder and then import from there into a google doc because lets face it, Numbers fucking sucks.</p>
+<p>I would suggest creating a blank sheet in google docs:
+File &gt; Import &gt; Upload &gt; select a file from your device &gt; find your ShipStation export .csv file &gt; “open” &gt; Import File &amp; click “replace spreadsheet”</p>
+<p>Import Data!</p>
+<p><img src="/images/soundscan_4.png" alt="example"></p>
+<h3 id="combining-the-upc--zip-codes">Combining the UPC &amp; Zip Codes:</h3>
+<p>Ok so now you’re almost done — all thats left is making the 9 digit zip code 5 digits &amp; making a column with a formula to combine everything.</p>
+<p>Lets start with the zip code! Make a new column next to the zip codes, I usually just call it “short zip” but it does not matter.</p>
+<p>A formula to take just the first 5 digits of the zip code if the zip code is in column J, row 2 is <strong>=left(J2,5)</strong></p>
+<p>Then, you can just click the cell you want and google docs will automatically plug it in, or you can manually just type it in:</p>
+<p><img src="/images/sounscan_5.png" alt="=left(J2,5)"></p>
+<p>Once you have this in there are several options to copy this all the way down to apply to all the Zip Codes. Google docs usually pops up a suggestion to auto fill and you can just hit the green check and it will copy the formula all the way down adjusted for each cell:</p>
+<p><img src="/images/soundscan_6.png" alt="Auto Fill"></p>
+<p>Sick! I’m assuming everyone also has to put some letters and numbers ahead of and after the UPC &amp; Zip Code like so:</p>
+<p>Example:
+<strong>M30 + 12 digit UPC + 5 Digit Zip Code + S</strong></p>
+<p>If you have a 13 digit UPC you will omit the 0 after &ldquo;M3&rdquo;.</p>
+<p>You’ll want to make a new column where your finalized list for SoundScan will live, and use the concatenate function to combine all this stuff together easily. This will look something like this:</p>
+<p><strong>=CONCATENATE(&ldquo;M30&rdquo; &amp; D2 &amp; K2 &amp; “S&quot;)</strong></p>
+<p>Put “ ” around the letters, and plug in the cell where the UPC &amp; Zip Code are (for me the UPC lived in D2 &amp; the 5 Digit Zip Code in K2). Pull this all the way down using auto fill and you’re all done!</p>
+<p>If you need to then place this list in a different document, make sure to paste using <strong>Edit &gt; Paste Special &gt; Paste Values Only</strong>.</p>
+<p>Hopefully this is helpful to someone other than me! This is the extent of my knowledge as we then send just the completed list to our distributor. If you are working independently w/ SoundScan I’m not quite sure how that work flow works.</p>
+<p>Please feel free to <a href="mailto:cameliabrennan@gmail.com"  >email</a>
+ me if you have experience with what happens if you don’t have a distributor who helps, and I’ll add those instructions in to make this more helpful for those next steps. Otherwise I&rsquo;ll add them as soon as I find out!</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/cameliabrennan" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/camibrennan" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/cameliabrennan" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-spotify">
+        <a href="https://open.spotify.com/playlist/6makVp9V7MIk53e18BkpMi?si=2c5a1c72f4af4148" title="spotify" target="_blank" rel="noopener">
+          <img src="/images/social/spotify.svg" width="24" height="24" alt="spotify"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XZVT4K315"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5XZVT4K315');
+      </script>
+    
+  
+
+
+</body>
+</html>

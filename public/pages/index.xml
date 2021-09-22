@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Camelia Brennan</title>
+    <link>/pages/</link>
+    <description>Recent content in Pages on Camelia Brennan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/about/</guid>
+      <description>Hello again,
+As previously mentioned, I’m learning to code! This is my first attempt at a site using Hugo.
+I&amp;rsquo;m currently working on building tools to improve the e-commerce &amp;amp; fulfillment experience for independent record labels. From Shopify help to problematic zebra printers to DIY SoundScan reports — I&amp;rsquo;m here to help, finding ways to automate all things tedious and frustrating.
+I have been working in the music industry since 2009 — currently working with Dispatch Dept.</description>
+    </item>
+    
+  </channel>
+</rss>

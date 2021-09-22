@@ -4,9 +4,9 @@
   --font-family-mono: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
-  --highlight-color: #003640;
-  --heading-color: #003640;
-  --text-color:  #4e5157; }
+  --highlight-color: #384058;
+  --heading-color:  #384058;
+  --text-color:  #353638; }
 
 body, html {
   margin: 0;
@@ -28,7 +28,7 @@ h1, h2, h3 {
   flex-direction: column-reverse;
   align-items: flex-start;
   margin-bottom: 30px;
-  font-size: 20px; }
+  font-size: 25px; }
   @media (min-width: 767px) {
     .header {
       padding-bottom: 5px;
@@ -599,7 +599,7 @@ body {
   body.frame {
     min-height: 100vh;
     border: 50px solid;
-    border-image: url("/images/kale-salad.jpg") 80 80 round; }
+    border-image: url("/images/cuadros.png") 35 25 round; }
 
 .wrapper {
   max-width: 1000px;

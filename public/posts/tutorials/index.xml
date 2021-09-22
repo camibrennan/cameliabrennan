@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Camelia Brennan</title>
+    <link>/posts/tutorials/</link>
+    <description>Recent content in Tutorials on Camelia Brennan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zebra Printers</title>
+      <link>/posts/tutorials/zebra_printers/</link>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tutorials/zebra_printers/</guid>
+      <description>Zebra printers seem to either work really well or are broke at the most devestating time possible.
+I recently set up a Zebra printer using a Mac in order to bulk print postage for webstore orders using ShipStation. Prior to doing this, I had always relied on the assistance of an IT department — so I assure you, you can do this yourself, and everything you read about them not working on Mac&amp;rsquo;s is not true!</description>
+    </item>
+    
+    <item>
+      <title>How to Compile SoundScan Data Using ShipStation</title>
+      <link>/posts/tutorials/soundscan_shipstation/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tutorials/soundscan_shipstation/</guid>
+      <description>UPDATE: I&amp;rsquo;m currently working on a tool that does this automatically, but in the meantime &amp;hellip;
+Add UPCs into ShipStation: The first step is to make sure all the UPCs for your releases are in ShipStation. It should pull these in with your product information automatically depending on what webstore you’re using, but if you don’t see them just go to Products &amp;gt; All Products &amp;gt; and you can add the UPC to each item.</description>
+    </item>
+    
+  </channel>
+</rss>
