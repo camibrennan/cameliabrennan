@@ -32,10 +32,25 @@ h1, h2, h3 {
   @media (min-width: 767px) {
     .header {
       padding-bottom: 5px;
-      margin-bottom: 40px; } }
+      margin-bottom: 10px; } }
+.footer-social {
+  margin-top: 5px; }
+  @media (min-width: 767px) {
+    .footer-social {
+      padding-top: 1px;
+      padding-bottom: 20px;
+      margin-bottom: 30px; } }
+.social-icon {
+  margin-right: 10px; }
+  .social-icon a {
+    text-decoration: none; }
+    .social-icon a:hover {
+      text-decoration: none; }
+      .social-icon a:hover img {
+        opacity: 0.7; }
+
 .menu-main {
-  display: none;
-  flex: 0; }
+  display: none; }
   @media (min-width: 767px) {
     .menu-main {
       display: block; } }

@@ -6,7 +6,7 @@
   font-size: 25px;
   @include breakpoint('small') {
     padding-bottom: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   // a.header-logo {
@@ -16,10 +16,31 @@
   // }
 }
 
+.footer-social {   
+  margin-top: 5px;
+  @include breakpoint('small') {
+    padding-top: 1px;
+    padding-bottom: 20px; 
+    margin-bottom: 30px;
+  
+  }
+}
+
+.social-icon {
+  margin-right: 10px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      img {
+        opacity: 0.7;
+      }
+    }
+  }
+}
 
 .menu-main {
   display: none;
-  flex: 0;
   @include breakpoint('small') {
      display: block;
   }
