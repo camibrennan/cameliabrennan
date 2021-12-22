@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Camelia Brennan"
 theme = "hugo-winston-theme"
+enableEmoji = true
 
 [params]
   logo = "images/logo.png"
@@ -15,6 +16,7 @@ theme = "hugo-winston-theme"
   showPostDescriptionOnHomepage = true 
   addFrame = true
   addDot = false
+
 
 [menu]
 
