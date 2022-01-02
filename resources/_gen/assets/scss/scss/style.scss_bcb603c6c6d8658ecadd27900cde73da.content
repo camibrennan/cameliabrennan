@@ -614,7 +614,7 @@ body {
   body.frame {
     min-height: 100vh;
     border: 50px solid;
-    border-image: url("/images/cuadros.png") 35 25 round; }
+    border-image: url("/images/kale-salad.jpg") 35 25 round; }
 
 .wrapper {
   max-width: 1000px;
