@@ -7,7 +7,7 @@ draft: false
 
 
 **_LIFTED or The Story Is in the Soil, Keep Your Ear to the Ground_**
-was the first CD I played after hysterically installing a CD player into my beloved 1990 Pontiac 6000. What is the point in being able to drive if you couldn't listen to ***Bright Eyes**... amirite, ladies. 
+was the first CD I played after hysterically installing a CD player into my beloved 1990 Pontiac 6000. What is the point in being able to drive if you couldn't listen to **Bright Eyes**... amirite, ladies. 
 
 During this this time, **Conor Oberst** was touring with a 16 piece orchestra and there were rumors of him falling off stage drunk mid show. Who knows if this was actually true, but as a 16 year old girl, the whole Saddle Creek alcoholism emo lore situation was FASCINATING. As someone who couldn't even legally purchase alcohol yet &mdash; being an alcoholic and not having a curfew all seemed _VERY_ cool.
 
