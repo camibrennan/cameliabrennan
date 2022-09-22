@@ -4,6 +4,9 @@ menu:
   main:
     name: "About"
 ---
+
+![](images/author.jpeg)
+
 Hello again,
 
 I'm currently working on building tools to improve the e-commerce, manufacturing & fulfillment experience for independent record labels. From Shopify help to problematic Zebra printers to DIY SoundScan reports &mdash;  I'm here to help, finding ways to automate all things tedious and frustrating.
